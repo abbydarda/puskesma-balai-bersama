@@ -9,10 +9,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       useFactory: (configService: ConfigService) => ({
         type: 'postgres',
         url: configService.getOrThrow('db.url'),
-        entities: [`${process.cwd()}/dist/database/typeorm/entities/*.entity{.ts,.js}`],
+        entities: [
+          `${process.cwd()}/dist/database/typeorm/entities/*.entity{.ts,.js}`,
+        ],
         autoLoadEntities: true,
         synchronize: configService.getOrThrow('db.synchronize'),
-        logging: true,
+        logging: process.env.NODE_ENV === 'development',
       }),
     }),
   ],
