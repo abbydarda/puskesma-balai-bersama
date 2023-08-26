@@ -6,6 +6,7 @@ Ini adalah API untuk test backend developer Datacakra.
 
 1. Ini dokumentasi [Postman](https://documenter.getpostman.com/view/3704595/2s9Y5Ww3Bf)
 2. Ini desain [ERD](https://dbdocs.io/darda.abby/puskesma-balai-bersama)
+3. Ini live demo [puskesmas-balai-bersama](https://puskesmas-balai-bersama.onrender.com)
 
 ## Instalasi
 
