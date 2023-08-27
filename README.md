@@ -22,7 +22,13 @@ Ini adalah API untuk test backend developer Datacakra.
    cd puskesmas-balai-bersama
    ```
 
-3. Buat file `.env` untuk production atau `.env.development` untuk tahap development dan isi dengan konfigurasi yang sesuai:
+3. Jalankan perintah `npm install`
+
+   ```
+   npm install
+   ```
+
+4. Buat file `.env` untuk production atau `.env.development` untuk tahap development dan isi dengan konfigurasi yang sesuai:
 
    ```bash
    touch .env
@@ -39,7 +45,7 @@ Ini adalah API untuk test backend developer Datacakra.
    JWT_EXP=1d
    ```
 
-4. Jalankan proses seeder
+5. Jalankan proses seeder
 
 ```bash
 # production
